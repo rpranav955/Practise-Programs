@@ -2,7 +2,7 @@ s = input("Enter your String: ").lower()
 
 num_of_vowels = 0
 num_of_consonants = 0
-num_of_words = 1
+num_of_words = len(s.split())
 num_of_qnmarks = 0
 
 for ch in s:
@@ -10,8 +10,6 @@ for ch in s:
 		num_of_vowels += 1
 	elif ch.isalpha():
 		num_of_consonants += 1
-	elif ch == ' ':
-		num_of_words += 1
 	elif ch == '?':
 		num_of_qnmarks += 1
 		
